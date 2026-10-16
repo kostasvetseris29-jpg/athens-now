@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Βρες Καθαριστή | ATHENS NOW</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f7fc;
+  color: #173052;
+}
+header {
+  background: linear-gradient(120deg,#102b50,#2465a2);
+  color: white;
+  padding: 38px 20px;
+  text-align: center;
+}
+header h1 { margin: 0; font-size: 32px; }
+nav { margin-top: 20px; }
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 35px 15px;
+}
+.hero h2 { font-size: 28px; }
+.search {
+  max-width: 450px;
+  width: 90%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.grid {
+  max-width: 1100px;
+  margin: 15px auto 60px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 24px;
+}
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 8px 28px #18395c16;
+}
+.avatar {
+  background: #e1ebf8;
+  color: #1a4d82;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+}
+.tag {
+  display: inline-block;
+  background: #e5f1fc;
+  color: #19558d;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #087e60;
+}
+button {
+  background: #087e60;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 13px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+footer {
+  background: #102b50;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>ATHENS NOW</h1>
+  <p>Βρες τον ιδανικό επαγγελματία καθαρισμού</p>
+  <nav>
+    <a href="index.html">Αρχική</a>
+    <a href="register.html">Γίνε συνεργάτης</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Επίλεξε τον καθαριστή σου</h2>
+  <p>Γνώρισε τους συνεργάτες μας και βρες
+     αυτόν που ταιριάζει στις ανάγκες σου.</p>
+  <input class="search" id="search"
+    placeholder="Αναζήτηση περιοχής ή υπηρεσίας..."
+    aria-label="Αναζήτηση καθαριστή">
+</section>
+
+<main class="grid" id="profiles">
+  <article class="card">
+    <div class="avatar">👩</div>
+    <h3>Μαρία Κ.</h3>
+    <span class="tag">Συνεργείο ATHENS NOW</span>
+    <p>📍 Γλυφάδα, Ελληνικό, Άλιμος</p>
+    <p>5 χρόνια εμπειρία στον καθαρισμό
+       κατοικιών και Airbnb.</p>
+    <p>⭐ Αξιολογήσεις: Δεν υπάρχουν ακόμη</p>
+    <p class="price">10€/ώρα</p>
+    <p>Ελάχιστη κράτηση: 3 ώρες</p>
+    <button onclick="demo()">Επιλογή καθαριστή</button>
+  </article>
+
+  <article class="card">
+    <div class="avatar">👨</div>
+    <h3>Γιώργος Π.</h3>
+    <span class="tag">Ανεξάρτητος καθαριστής</span>
+    <p>📍 Πατήσια, Κυψέλη, Γαλάτσι</p>
+    <p>3 χρόνια εμπειρία σε σπίτια,
+       γραφεία και επαγγελματικούς χώρους.</p>
+    <p>⭐ Αξιολογήσεις: Δεν υπάρχουν ακόμη</p>
+    <p class="price">10€/ώρα</p>
+    <p>Ελάχιστη κράτηση: 3 ώρες</p>
+    <button onclick="demo()">Επιλογή καθαριστή</button>
+  </article>
+
+  <article class="card">
+    <div class="avatar">👩</div>
+    <h3>Ελένη Μ.</h3>
+    <span class="tag">Ανεξάρτητη καθαρίστρια</span>
+    <p>📍 Χαλάνδρι, Μαρούσι, Χολαργός</p>
+    <p>7 χρόνια εμπειρία σε γενικούς
+       καθαρισμούς και επαγγελματικούς χώρους.</p>
+    <p>⭐ Αξιολογήσεις: Δεν υπάρχουν ακόμη</p>
+    <p class="price">10€/ώρα</p>
+    <p>Ελάχιστη κράτηση: 3 ώρες</p>
+    <button onclick="demo()">Επιλογή καθαριστή</button>
+  </article>
+</main>
+
+<footer>
+  <p>Δοκιμαστικά προφίλ με φανταστικά στοιχεία.
+     Δεν γίνονται ακόμη κρατήσεις.</p>
+  <p>© 2026 ATHENS NOW</p>
+</footer>
+
+<script>
+const search = document.getElementById("search");
+search.addEventListener("input", function() {
+  const term = search.value.toLocaleLowerCase("el");
+  document.querySelectorAll(".card").forEach(card => {
+    card.style.display =
+      card.textContent.toLocaleLowerCase("el").includes(term)
+      ? "" : "none";
+  });
+});
+function demo() {
+  alert("Η δυνατότητα κράτησης θα προστεθεί σύντομα.");
+}
+</script>
+</body>
+</html>
